@@ -97,7 +97,11 @@ export default function Album() {
       <CssBaseline />
       <AppBar position="relative" style={{ background: "#78C165" }}>
         <Toolbar>
-          <img src={headerLogo} style={{ width: "3%", margin: "10px" }} />
+          <img
+            src={headerLogo}
+            alt="zombie icon"
+            style={{ width: "3%", margin: "10px" }}
+          />
           <Typography variant="h6" color="inherit" noWrap>
             Zombites
           </Typography>
