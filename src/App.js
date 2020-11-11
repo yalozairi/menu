@@ -29,7 +29,10 @@ import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 // import CameraIcon from "@material-ui/icons/PhotoCamera";
-import headerLogo from "./media/0bbc3140-74c4-4a04-af3c-7ca02e41103c.svg";
+import darkLogo from "./media/0bbc3140-74c4-4a04-af3c-7ca02e41103c.svg";
+import lightLogo from "./media/1f3cbc72-e04e-4672-87ed-21cd69fa1f2d.svg";
+import logo from "./media/85699723-05ca-4073-9290-8a3efbe09932.svg";
+import greenLogo from "./media/e0992c22-55c5-4ecd-9be2-1ae516b3f410.svg";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
@@ -59,6 +62,11 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(2),
   },
+
+  creepyFont: {
+    fontFamily: "Creepster",
+  },
+
   heroContent: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(8, 0, 6),
@@ -87,8 +95,73 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const appetizers = [
+  {
+    key: 1,
+    content: "THIS IS THE BEST MEAL",
+    heading: "TEST",
+    image: darkLogo,
+  },
+  {
+    key: 2,
+    content: "THIS IS THE BEST MEAL",
+    heading: "TEST",
+    image: darkLogo,
+  },
+  {
+    key: 3,
+    content: "THIS IS THE BEST MEAL",
+    heading: "TEST",
+    image: darkLogo,
+  },
+];
 
+const mainCourses = [
+  {
+    key: 1,
+    content: "THIS IS THE BEST MEAL",
+    heading: "TEST",
+    image: lightLogo,
+  },
+  {
+    key: 2,
+    content: "THIS IS THE BEST MEAL",
+    heading: "TEST",
+    image: lightLogo,
+  },
+  {
+    key: 3,
+    content: "THIS IS THE BEST MEAL",
+    heading: "TEST",
+    image: lightLogo,
+  },
+  {
+    key: 4,
+    content: "THIS IS THE BEST MEAL",
+    heading: "TEST",
+    image: lightLogo,
+  },
+];
+const desserts = [
+  {
+    key: 1,
+    content: "THIS IS THE BEST MEAL",
+    heading: "TEST",
+    image: greenLogo,
+  },
+  {
+    key: 2,
+    content: "THIS IS THE BEST MEAL",
+    heading: "TEST",
+    image: greenLogo,
+  },
+  {
+    key: 3,
+    content: "THIS IS THE BEST MEAL",
+    heading: "TEST",
+    image: greenLogo,
+  },
+];
 export default function Album() {
   const classes = useStyles();
 
@@ -98,13 +171,13 @@ export default function Album() {
       <AppBar position="relative" style={{ background: "#78C165" }}>
         <Toolbar>
           <img
-            src={headerLogo}
+            src={logo}
             alt="zombie icon"
-            style={{ width: "3%", margin: "10px" }}
+            style={{ width: "3%", minWidth: "30px", margin: "10px" }}
           />
-          <Typography variant="h6" color="inherit" noWrap>
+          <h1 noWrap style={{ fontFamily: "Creepster" }}>
             Zombites
-          </Typography>
+          </h1>
         </Toolbar>
       </AppBar>
       <main>
@@ -112,15 +185,18 @@ export default function Album() {
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography
+              className={classes.creepyFont}
               component="h1"
               variant="h2"
               align="center"
               color="textPrimary"
+              fontFamily="Creepster"
               gutterBottom
             >
               Zombites
             </Typography>
             <Typography
+              className={classes.creepyFont}
               variant="h5"
               align="center"
               color="textSecondary"
@@ -132,44 +208,203 @@ export default function Album() {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="primary">
-                    Main call to action
+                  <Button
+                    className={classes.creepyFont}
+                    variant="contained"
+                    style={{ background: "#78C165", color: "white" }}
+                    href="https://gizmodo.com/why-is-it-that-zombies-eat-brains-1669204056"
+                    target="_Blank"
+                  >
+                    Learn more about brains!
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Secondary action
+                  <Button
+                    className={classes.creepyFont}
+                    variant="contained"
+                    style={{
+                      background: "#78C165",
+                      color: "white",
+                    }}
+                    href="https://goo.gl/maps/pV8sQYtMrPYwF9ii8"
+                    target="_Blank"
+                  >
+                    Locate us!
                   </Button>
                 </Grid>
               </Grid>
             </div>
           </Container>
         </div>
+        <Typography
+          className={classes.creepyFont}
+          component="h1"
+          variant="h2"
+          align="center"
+          color="textPrimary"
+          fontFamily="Creepster"
+          gutterTop
+        >
+          Appetizers
+        </Typography>
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
+            {appetizers.map((card) => (
+              <Grid item key={card.key} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
-                    title="Image title"
+                    image={card.image}
+                    title={card.heading}
                   />
                   <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                    <Typography
+                      className={classes.creepyFont}
+                      gutterBottom
+                      variant="h5"
+                      component="h2"
+                    >
+                      {card.heading}
                     </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe
-                      the content.
+                    <Typography
+                      className={classes.creepyFont}
+                      style={{ color: "grey" }}
+                    >
+                      {card.content}
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
+                    <Button
+                      className={classes.creepyFont}
+                      size="small"
+                      color="primary"
+                    >
                       View
                     </Button>
-                    <Button size="small" color="primary">
+                    <Button
+                      className={classes.creepyFont}
+                      size="small"
+                      color="primary"
+                    >
+                      Edit
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+        <Typography
+          className={classes.creepyFont}
+          component="h1"
+          variant="h2"
+          align="center"
+          color="textPrimary"
+          fontFamily="Creepster"
+          gutterTop
+        >
+          Main Courses
+        </Typography>
+        <Container className={classes.cardGrid} maxWidth="md">
+          {/* End hero unit */}
+          <Grid container spacing={4}>
+            {mainCourses.map((card) => (
+              <Grid item key={card.key} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={card.image}
+                    title={card.heading}
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography
+                      className={classes.creepyFont}
+                      gutterBottom
+                      variant="h5"
+                      component="h2"
+                    >
+                      {card.heading}
+                    </Typography>
+                    <Typography
+                      className={classes.creepyFont}
+                      style={{ color: "grey" }}
+                    >
+                      {card.content}
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button
+                      className={classes.creepyFont}
+                      size="small"
+                      color="primary"
+                    >
+                      View
+                    </Button>
+                    <Button
+                      className={classes.creepyFont}
+                      size="small"
+                      color="primary"
+                    >
+                      Edit
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+        <Typography
+          className={classes.creepyFont}
+          component="h1"
+          variant="h2"
+          align="center"
+          color="textPrimary"
+          fontFamily="Creepster"
+          gutterTop
+        >
+          Desserts!
+        </Typography>
+        <Container className={classes.cardGrid} maxWidth="md">
+          {/* End hero unit */}
+          <Grid container spacing={4}>
+            {desserts.map((card) => (
+              <Grid item key={card.key} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={card.image}
+                    title={card.heading}
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography
+                      className={classes.creepyFont}
+                      gutterBottom
+                      variant="h5"
+                      component="h2"
+                    >
+                      {card.heading}
+                    </Typography>
+                    <Typography
+                      className={classes.creepyFont}
+                      style={{ color: "grey" }}
+                    >
+                      {card.content}
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button
+                      className={classes.creepyFont}
+                      size="small"
+                      color="primary"
+                    >
+                      View
+                    </Button>
+                    <Button
+                      className={classes.creepyFont}
+                      size="small"
+                      color="primary"
+                    >
                       Edit
                     </Button>
                   </CardActions>
@@ -181,10 +416,16 @@ export default function Album() {
       </main>
       {/* Footer */}
       <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
+        <Typography
+          className={classes.creepyFont}
+          variant="h6"
+          align="center"
+          gutterBottom
+        >
           Footer
         </Typography>
         <Typography
+          className={classes.creepyFont}
           variant="subtitle1"
           align="center"
           color="textSecondary"
