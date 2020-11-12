@@ -326,7 +326,7 @@ export default function Album() {
               (CONFIDENTIAL... DO NOT SHARE)
             </Typography>
             <div className={classes.heroButtons}>
-              <Grid container spacing={3} justify="center">
+              <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Button
                     className={classes.creepyFont}
