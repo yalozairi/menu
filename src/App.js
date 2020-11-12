@@ -107,7 +107,7 @@ const appetizers = [
   {
     key: 1,
     content:
-      "Midbrain galore smushy wrinkly outer layer bits soaked in ‘brain juice’ EYE-OPENING Meal The sensory cortex includes portions of the cerebral cortex, that wrinkly outer layer of the brain that process and make sense out of information gathered by our five senses: vision, audition (sound), olfaction (smell), gustation (taste), and somatosensation (touch) enlighten your senses for the day ahead of you with this perfect breakfast stew Motor cortex and sensory cortex are also like headbands. On top of corpus callosum (the communication linkage). it receives info from skin surfaces and all sense organs except smell because olfactory bulb goes directly into the brain. Auditory function: MRI Scans showed the auditory cortex is activated in patients who hallucinate, so to them, what they see and hear comes straight from their auditory and visual cortexes, which seems very real. Visual function: Functional MRI scan shows the visual cortex activating as the subject looks at faces. This is one of the brain parts that are working when seeing others",
+      "This stew is something to wake up for! With its smushy wrinkly outer layer bits soaked in Hydrocephalus (what we like to call ‘brain juice’), this EYE-OPENING meal is stuffed with sensory cortexes. These cortexes excel in gathering and interpreting sensory information from all over the body -what this means for you is that this soup is sure to make the start of your day!! It will keep you alert, unleashing all of your senses like never before! *Please note that due to the Olfactory Bulb and its separate pathways, your smell will not be improved with this dish.",
     heading: "Sensory Stew",
     ingredients: [
       {
@@ -115,20 +115,25 @@ const appetizers = [
         name: "Sensory Cortex",
         link: "https://en.wikipedia.org/wiki/Sensory_cortex",
       },
+      {
+        key: 2,
+        name: "Hydrocephalus",
+        link: "https://en.wikipedia.org/wiki/Hydrocephalus",
+      },
     ],
     image: sensoryStew,
   },
   {
     key: 2,
     content:
-      "Fresh Hippocampus salad to allow you to create new memories to recall this taste later on and increase your emotions during the meal. works perfectly with. Try to remember how many Hippocampi you ate!",
+      "You won't forget this fresh Hippocampus salad! Littered with chunks of hippocampus, eating this salad will greatly improve your memory-making abilities! This is a perfect starter to your three-course-meal as, if you have enough hippocampi, you wil have memorized your meal so accurately that you could even recall and enjoy the taste later on! And yet, there's more... One more function of the hippocampus is emotions, and so this fresh healthy salad will additionally work wonders to increase your emotions during the meal! After eating this scrumptious salad, try to remember how many Hippocampi you ate!",
     heading: "Hippo-Memory Salad",
     ingredients: [
       {
         key: 1,
         name: "Hippocampus",
         link: "https://en.wikipedia.org/wiki/Hippocampus",
-      },
+      }, //TODO
     ],
     image: hippoSalad,
   },
@@ -621,8 +626,8 @@ export default function Album() {
           color="textSecondary"
           component="p"
         >
-          Fully Programmed by Yousif Alozairi -Using React, Javascript, HTML,
-          and CSS{" "}
+          This website was entirely Programmed by Yousif Alozairi -Using React,
+          Javascript, HTML, CSS and BRAIN POWER!{" "}
         </Typography>
         <Copyright />
       </footer>
