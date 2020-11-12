@@ -181,7 +181,7 @@ const mainCourses = [
       },
       {
         key: 2,
-        name: "Human Brains",
+        name: "Brains",
         link: "https://en.wikipedia.org/wiki/Human_brain",
       },
       {
@@ -191,7 +191,7 @@ const mainCourses = [
       },
       {
         key: 4,
-        name: "FMRI Scanners",
+        name: "FMRI",
         link:
           "https://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging",
       },
@@ -211,17 +211,17 @@ const mainCourses = [
       },
       {
         key: 2,
+        name: "Eyes!",
+        link: "https://en.wikipedia.org/wiki/Human_eye",
+      },
+      {
+        key: 3,
         name: "Carolina Reapers",
         link: "https://en.wikipedia.org/wiki/Carolina_Reaper",
       },
       {
-        key: 3,
-        name: "Human Eyes!",
-        link: "https://en.wikipedia.org/wiki/Human_eye",
-      },
-      {
         key: 4,
-        name: "Red-Hot Buns",
+        name: "Red Buns",
         link: "https://www.shutterstock.com/search/burger+red+bun",
       },
     ],
