@@ -126,14 +126,24 @@ const appetizers = [
   {
     key: 2,
     content:
-      "You won't forget this fresh Hippocampus salad! Littered with chunks of hippocampus, eating this salad will greatly improve your memory-making abilities! This is a perfect starter to your three-course-meal as, if you have enough hippocampi, you wil have memorized your meal so accurately that you could even recall and enjoy the taste later on! And yet, there's more... One more function of the hippocampus is emotions, and so this fresh healthy salad will additionally work wonders to increase your emotions during the meal! After eating this scrumptious salad, try to remember how many Hippocampi you ate!",
+      "You won't forget this fresh Hippocampus salad! Littered with chunks of hippocampus mixed with tomb-atoes and lethal lettuce, eating this salad will greatly improve your memory-making abilities! This is a perfect starter to your three-course-meal as, if you have enough hippocampi, you will have memorized your meal so accurately that you could even recall and enjoy the taste later on! And yet, there's more... One more function of the hippocampus is emotions, and so this fresh healthy salad will additionally work wonders to increase your emotions during the meal! After eating this scrumptious salad, try to remember how many Hippocampi you ate!",
     heading: "Hippo-Memory Salad",
     ingredients: [
       {
         key: 1,
         name: "Hippocampus",
         link: "https://en.wikipedia.org/wiki/Hippocampus",
-      }, //TODO
+      },
+      {
+        key: 2,
+        name: "Tomb-atoes",
+        link: "https://en.wikipedia.org/wiki/Tomato",
+      },
+      {
+        key: 3,
+        name: "Lethal Lettuce",
+        link: "https://thewarwhoop.com/6248/news/lethal-lettuce/",
+      },
     ],
     image: hippoSalad,
   },
@@ -169,6 +179,22 @@ const mainCourses = [
         name: "Amygdala",
         link: "https://en.wikipedia.org/wiki/Amygdala",
       },
+      {
+        key: 2,
+        name: "Human Brains",
+        link: "https://en.wikipedia.org/wiki/Human_brain",
+      },
+      {
+        key: 3,
+        name: "Boys",
+        link: "https://en.wikipedia.org/wiki/Boy",
+      },
+      {
+        key: 4,
+        name: "FMRI Scanners",
+        link:
+          "https://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging",
+      },
     ],
     image: brainlessBoyz,
   },
@@ -182,7 +208,22 @@ const mainCourses = [
         key: 1,
         name: "Hypothalamus",
         link: "https://en.wikipedia.org/wiki/Hypothalamus",
-      }, //TBD CAROLINA REAPERS AND HUMAN EYES
+      },
+      {
+        key: 2,
+        name: "Carolina Reapers",
+        link: "https://en.wikipedia.org/wiki/Carolina_Reaper",
+      },
+      {
+        key: 3,
+        name: "Human Eyes!",
+        link: "https://en.wikipedia.org/wiki/Human_eye",
+      },
+      {
+        key: 4,
+        name: "Red-Hot Buns",
+        link: "https://www.shutterstock.com/search/burger+red+bun",
+      },
     ],
     image: brainBurger,
   },
@@ -197,7 +238,12 @@ const mainCourses = [
         name: "Medulla Oblongata",
         link: "https://en.wikipedia.org/wiki/Medulla_oblongata",
       },
-      { key: 2, name: "Pons", link: "https://en.wikipedia.org/wiki/Pons" }, //TODO MIDBRAIN
+      { key: 2, name: "Pons", link: "https://en.wikipedia.org/wiki/Pons" },
+      {
+        key: 3,
+        name: "Midbrain",
+        link: "https://en.wikipedia.org/wiki/Midbrain",
+      },
     ],
     image: stemChops,
   },
@@ -253,7 +299,7 @@ const desserts = [
   {
     key: 3,
     content:
-      "Open your eyes to the bright outside world and gets your muscles moving!",
+      "Open your eyes to the bright outside world and get your muscles moving with these freshly blended milkshakes! They include both the motor cortex and occipital lobe blended into one bloody mess of a drink! The bits of occipital lobe will drastically change your optical abilities, allowing you to see the world like never before! On top of that, the bits of motor cortex will work wonders for your neural impulses, energixing you like never before, as you will be eager to start moving out and about!",
     heading: "Freshly Blended Motor-Shake",
     ingredients: [
       {
