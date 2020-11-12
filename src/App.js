@@ -139,8 +139,7 @@ const appetizers = [
   },
   {
     key: 3,
-    content:
-      "do you miss feeling pain? If so, take this quick boost of thalamus that will for sure make you feel something again! connect to your long lost nervous system that will make you nostalgic for the amazing human you once was! -pain receptors -nostalgic memories that Nostalgic experiences stimulate metabolic activity and blood flow in several regions of the brain, particularly the frontal, limbic, paralimbic, and midbrain areas. *A hint of herby “Basil Ganglia”",
+    content: `Do you miss the feeling of pain? If so, take this quick boost of thalamus which will ensure that you feel something again! Connect to your long lost nervous system that will make you nostalgic for the amazing human you once were! These Thalamus-filled balls will bring even more benefits than just pain perception, as they can also help with your health and well being with improved sleep regulation and even sensory and motor signals, meaning your body will be as active and alert as ever! But of course, at Zombites, we did not stop there... we have topped these mouth-watering balls of pain perception with a hint of herby "Basil Gangliants", which comes from the Basal Ganglia of human brains which is essential in your movemnt and coordination, as well as developing and practicing skill patterns! As you eat these mini baked bites of crusty pain, you will only grow more coordinated, speedier, more alert, while feeling nostalgic for the pain you used to feel -all in one tightly-crumbled ball of goodness.`,
     heading: "The mini baked bites of Pain",
     ingredients: [
       {
@@ -162,7 +161,7 @@ const mainCourses = [
   {
     key: 1,
     content:
-      "Full course meal eat the brains of any boy you pick. fully customize to your liking! Fun freestyle game you can utilize the FMRI scanner to detect the most active parts of the brain, to indulge in the most blood. you must scare your boy to detect the location of its amygdala, which will light up with his fear!",
+      "This is our signature meal! Not bothered to choose anything? Then this is perfect for you! We serve everything you need at once, as we farm and extract more brains from more boys -hence the name! As for benefits, you are free to eat as many brains from all the boys you may choose -being fully customizable to your liking! If you choose, you can even take part in our fun freestyle game utlizing some breakthrough FMRI scanning technology. To do this, you must come over to our live station (with living boys), equip them with a FRMI scanner, and feast away! What the FMRI scanner will do is automatically detect the most active parts of the brain for you, so that you can indulge in the most blood! However, the aim of the game is not simply to eat, no, you must instead hunt for the treasure in this boy's brain. Where all the blood rushes at once, as he grows more and more terrified as you indulge. This is none other than the Amygdala, which will light up the FMRI scanner as the boy's fear grows! Find this gem and bring all your amygdala back to our renowned chefs to cook up some fried up fear! This is certainly the most unique, once in a lifetime experience we offer here at Zombites.",
     heading: "The Brainless Boys",
     ingredients: [
       {
@@ -176,21 +175,21 @@ const mainCourses = [
   {
     key: 2,
     content:
-      "Brain burger stuffed with Hypothalamus that is guaranteed to regulate your body temperatures to an all-time high! This meal is for the riskiest risk-takers as you are you to be sweating by the end, stressing you out ADD VISUAL CORTEX FOR THE EYE ON TOP",
+      "This hyper-spicy Brain Burger has a trick up its sleeve! Stuffed to the brim with human eyes and Carolina Reaper Chilli Peppers, a burger this spicy would most likely blow you to your bones! However, we have stuffed it to the brim with Hypothalamus, only the greatest piece of stability in the brain. With this hypothalamus-infused burger, your body temperatures are 99% guaranteed to not even rise! It is incredible what the hypothalamus can do to achieve homeostasis, and so we perfectly adapted that to this hot and spicy meal! However, due to the 1% not covered in our homeostasis guarantee, this meal is for the riskiest risk-takers as, if the hypothalamus does not take into effect, you will be falling to your knees by the end of it!",
     heading: "Hypo-Spicy Brain Burger",
     ingredients: [
       {
         key: 1,
         name: "Hypothalamus",
         link: "https://en.wikipedia.org/wiki/Hypothalamus",
-      },
+      }, //TBD CAROLINA REAPERS AND HUMAN EYES
     ],
     image: brainBurger,
   },
   {
     key: 3,
     content:
-      "bottom is Medulla for autonomic functions and heart increase top is pons. cherry on top is midbrain. DEAD-ication",
+      "With this meal, we have looked to bring what the humans did with lambchops, back to their own brain stems. That's right! We have pioneered a new kind of 'chop', the Brain-Stem Chop! The stem is filled with beneficial brain parts top to bottom! At the bottom, there is a piece of Medulla, perfect for your autonomic functions surely to boost your heart rate! on the other end is the pons. Near the top of the stem, the pons also has great benefits for your posture and facial expressions. With zombie life becoming increasingly more civilized, this will not only help practice your facial expressions but also improve that ugly posture of yours! With our DEAD-ication to our customers, we coud not stop there, as the brainstem in topped with one 'cherry' on top of a midbrain. You're gonna love it!",
     heading: "Brain-Stem Chops (with a Hint of Midbrain",
     ingredients: [
       {
@@ -198,14 +197,14 @@ const mainCourses = [
         name: "Medulla Oblongata",
         link: "https://en.wikipedia.org/wiki/Medulla_oblongata",
       },
-      { key: 2, name: "Pons", link: "https://en.wikipedia.org/wiki/Pons" },
+      { key: 2, name: "Pons", link: "https://en.wikipedia.org/wiki/Pons" }, //TODO MIDBRAIN
     ],
     image: stemChops,
   },
   {
     key: 4,
     content:
-      "Have an entire temporal lobe including the renowned Wernicke's area is the region of the brain that is important for language development. It is located in the temporal lobe on the left side of the brain and is responsible for the comprehension of speech choose from a salty right lobe or sweetened left lobe surrounded by two ears. Tomb-ato",
+      "You haven't heard of this before! Our special temporary deal of a club sandwich has it all! This time, it's all about hearing! We've stuffed as much hearing as we can into this one package as to help you all out there! You can have an entire temporal lobe including the renowned Wernicke's area as well as full on human ears! These will bring huge benefits especially for your language development and comprehension of speech! Choose from a salty right lobe or sweetened left lobe surrounded by two ears!",
     heading: "Loud-ear club sandwich -‘Temporal’ily available",
     ingredients: [
       {
@@ -226,7 +225,7 @@ const desserts = [
   {
     key: 1,
     content:
-      "Especially after a hypo-spicy brain burger you can take this to cool yourself off, destress, and relax. It is a healthy vegetable smoothie with greenery coming from a variety of regions, but at its core we have a Rocca-infused Broca’s Area, a vital brain part for language. We have named this innovative new infused brain part, Brocca (Broca + Rocca). Additionally the Chinese spinach, persian carrots, Indian Ginger, Thai Tumeric, and of course italian rocca, bring an international flavor to this vegetable smoothie will give you a taste of all cultures and languages, a healthy practice",
+      "Especially after a hypo-spicy brain burger you can take this to cool yourself off, destress, and relax. It is a healthy vegetable smoothie with greenery coming from a variety of regions, but at its core we have a Rocca-infused Broca’s Area, a vital brain part for language. We have named this innovative new infused brain part, Brocca (Broca + Rocca). Additionally the Chinese spinach, persian carrots, Indian Ginger, Thai Tumeric, and of course italian rocca, bring an international flavor to this vegetable smoothie will give you a taste and practice of all cultures and languages, a healthy practice!",
     heading: "Brocca Smoothie",
     ingredients: [
       {
@@ -240,7 +239,7 @@ const desserts = [
   {
     key: 2,
     content:
-      "After enjoying your full-course meal, stimulate your senses with some ice cold frontal lobe ice cream cake. This is perfect as the frontal lobe will work wonders in controls important cognitive skills in humans, such as emotional expression, problem solving, memory, language, judgment, and sexual behaviors. It is, in essence, the “control panel” of our personality and our ability to communicate.",
+      "After enjoying your full-course meal, stimulate your senses with some ice cold frontal lobe ice cream cake. This is perfect as the frontal lobe will work wonders in controlling your most important cognitive skills, including even emotional expression, problem solving, memory, language, judgment, aand more! In essence, you can obsorb the human personality “control panel” to communicate like never before! Socially, after having this freezing cold dessert, you will come out as almost a brand new zombie! A great change-up for your dead life.",
     heading: "Iced Frontal Cake",
     ingredients: [
       {
