@@ -43,18 +43,24 @@ function Copyright() {
   return (
     <>
       <Typography variant="body2" color="textSecondary" align="center">
-        {"Copyright © "}
-        Zombites Fully Programmed by Yousif Alozairi {""}
-        {new Date().getFullYear()}
-        {"."}
-      </Typography>
-      <Typography variant="body2" color="textSecondary" align="center">
         <Link
           color="inherit"
           href="https://drive.google.com/file/d/1xMBPuKMuQmu25w9KDTGdQIoPpyfgQa3_/view?usp=sharing"
+          target="_Blank"
         >
-          Click here to view my source code!
+          Click here to view my 600 lines of source code!
         </Link>
+      </Typography>
+      <Typography
+        variant="body2"
+        color="textSecondary"
+        align="center"
+        style={{ marginTop: "15px" }}
+      >
+        {"Copyright © "}
+        Zombites {""}
+        {new Date().getFullYear()}
+        {"."}
       </Typography>
     </>
   );
@@ -179,7 +185,7 @@ const mainCourses = [
   {
     key: 3,
     content:
-      "bottom is Medulla for autonomic functions and heart increase top is pons. cherry on top is midbrain",
+      "bottom is Medulla for autonomic functions and heart increase top is pons. cherry on top is midbrain. DEAD-ication",
     heading: "Brain-Stem Chops (with a Hint of Midbrain",
     ingredients: [
       {
@@ -194,7 +200,7 @@ const mainCourses = [
   {
     key: 4,
     content:
-      "Have an entire temporal lobe including the renowned Wernicke's area is the region of the brain that is important for language development. It is located in the temporal lobe on the left side of the brain and is responsible for the comprehension of speech choose from a salty right lobe or sweetened left lobe surrounded by two ears",
+      "Have an entire temporal lobe including the renowned Wernicke's area is the region of the brain that is important for language development. It is located in the temporal lobe on the left side of the brain and is responsible for the comprehension of speech choose from a salty right lobe or sweetened left lobe surrounded by two ears. Tomb-ato",
     heading: "Loud-ear club sandwich -‘Temporal’ily available",
     ingredients: [
       {
@@ -275,7 +281,7 @@ export default function Album() {
           />
 
           <h1 noWrap style={{ fontFamily: "Creepster" }}>
-            Zombites
+            The Zombites Menu
           </h1>
         </Toolbar>
       </AppBar>
@@ -305,11 +311,22 @@ export default function Album() {
               data-aos="flip-left"
               data-aos-once="true"
             >
-              At Zombites, we focus on the precise brain parts that will bring
-              you only the greatest of benefits
+              Congratulations on discovering the secret zombie market! At
+              Zombites, it's always rainin' brains
+            </Typography>
+            <Typography
+              className={classes.creepyFont}
+              variant="h6"
+              align="center"
+              color="secondary"
+              paragraph
+              data-aos="flip-left"
+              data-aos-once="true"
+            >
+              (CONFIDENTIAL... DO NOT SHARE)
             </Typography>
             <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
+              <Grid container spacing={3} justify="center">
                 <Grid item>
                   <Button
                     className={classes.creepyFont}
@@ -320,7 +337,7 @@ export default function Album() {
                     data-aos="fade-in"
                     data-aos-once="true"
                   >
-                    Learn more about brains!
+                    Learn more about brains! 🧠
                   </Button>
                 </Grid>
                 <Grid item>
@@ -336,7 +353,7 @@ export default function Album() {
                     data-aos="fade-in"
                     data-aos-once="true"
                   >
-                    Locate us!
+                    🗺 Locate us!
                   </Button>
                 </Grid>
               </Grid>
@@ -428,7 +445,7 @@ export default function Album() {
           color="textPrimary"
           fontFamily="Creepster"
           gutterTop
-          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-up"
           data-aos-duration="1000"
         >
           Main Courses
@@ -504,7 +521,7 @@ export default function Album() {
           color="textPrimary"
           fontFamily="Creepster"
           gutterTop
-          data-aos-anchor-placement="top-bottom"
+          data-aos="fade-up"
           data-aos-duration="1000"
         >
           Desserts!
@@ -580,6 +597,8 @@ export default function Album() {
           variant="h6"
           align="center"
           gutterBottom
+          data-aos-duration="2000"
+          data-aos="fade-in"
         >
           You can click on each of our brain ingredients to learn more!
         </Typography>
@@ -591,6 +610,8 @@ export default function Album() {
               maxHeight: "100vh",
               minWidth: "40px",
             }}
+            data-aos-duration="2000"
+            data-aos="flip-right"
           />
         </Grid>
         <Typography
@@ -600,7 +621,8 @@ export default function Album() {
           color="textSecondary"
           component="p"
         >
-          Congratulations by accessing this secret website!
+          Fully Programmed by Yousif Alozairi -Using React, Javascript, HTML,
+          and CSS{" "}
         </Typography>
         <Copyright />
       </footer>
